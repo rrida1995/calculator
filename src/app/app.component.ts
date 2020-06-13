@@ -22,6 +22,6 @@ export class AppComponent {
       this.result = this.num1 * this.num2;
   }
   divide() {
-      this.result = Math.floor(this.num1 / this.num2);
+      this.result = Math.round(this.num1 * 100.0 / this.num2) / 100;
   }
 }
