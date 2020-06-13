@@ -22,6 +22,11 @@ export class AppComponent {
       this.result = this.num1 * this.num2;
   }
   divide() {
-      this.result = Math.round(this.num1 * 100.0 / this.num2) / 100;
+      if(this.num2 === 0) {
+        alert('value must not be 0');
+      }
+      else {
+        this.result = Math.round(this.num1 * 100.0 / this.num2) / 100;
+      }
   }
 }
