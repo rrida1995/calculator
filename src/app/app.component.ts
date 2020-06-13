@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-// import 'bootstrap/dist/css/bootstrap.min.css';
 
 @Component({
   selector: 'app-root',
@@ -12,6 +11,7 @@ export class AppComponent {
   num1: number;
   num2: number;
   result: number;
+
   add() {
       this.result = this.num1 + this.num2;
   }
@@ -22,6 +22,6 @@ export class AppComponent {
       this.result = this.num1 * this.num2;
   }
   divide() {
-      this.result = (this.num1 / this.num2) - (( this.num1 % this.num2 ) / this.num2);
+      this.result = Math.floor(this.num1 / this.num2);
   }
 }
